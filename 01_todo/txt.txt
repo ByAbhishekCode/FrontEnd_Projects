@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgba(72, 163, 0, 0.07);
+  margin-top: 36px;
+  /* font-family: "Poppins", sans-serif; */
+  /* color: #333; */
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.outer-heading {
+  font-size: 5vmax;
+  text-align: center;
+  color: rgba(72, 163, 0, 1);
+  margin-bottom: 30px;
+}
+.outer-heading span {
+  color: rgb(97, 72, 28);
+}
+
+.container {
+  font-size: 24px;
+  /* font-weight: 600; */
+  background-color: rgba(251, 251, 251, 1);
+  max-width: 660px;
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 32px 42px;
+  box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.2);
+}
+
+.task-take {
+  font-weight: 600;
+  width: 50px;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.task {
+  font-size: 14px;
+}
+.container p {
+  font-size: 20px;
+  color: rgba(133, 133, 133, 1);
+}
+
+.goal-checkbox {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 82px;
+  border-radius: 17px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  margin: 20px 0;
+  background-color: rgba(255, 255, 255, 1);
+  /* justify-content: space-between; */
+}
+
+.checkbox {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(97, 72, 28, 0.3);
+}
+
+.input {
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  margin-left: 22px;
+  border: none;
+  font-family: inherit;
+  outline: none;
+}
+
+.input::placeholder {
+  color: rgba(217, 217, 217, 1); /* Or any color like red, blue, etc. */
+}
+
+#end-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+footer{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: gray;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 16px 22px;
+  }
+}
+
+@media (max-width:768) {
+  .container{
+    padding: 0 500px;
+  }
+}
+
+
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="outer-heading">Things To Do <span>Today</span></h1>
+      <div class="container">
+        Hi, <span>Abhishek</span><img src="todo.png" alt="" class="task-take" />
+        <p>Today’s effort is tomorrow’s success.</p>
+        <div class="task">2/4 completed</div>
+        <div class="goal-checkbox">
+          <div class="checkbox"></div>
+          <input class="input" type="text" placeholder="Enter text here....." />
+        </div>
+        <div class="goal-checkbox">
+          <div class="checkbox"></div>
+          <input class="input" type="text" placeholder="Enter text here....." />
+        </div>
+        <div class="goal-checkbox">
+          <div class="checkbox"></div>
+          <input class="input" type="text" placeholder="Enter text here....." />
+        </div>
+        <p id="end-text">"Complete one task today — and you're already winning."</p>
+        <footer>Made By ❤️ by Abhishek</footer>
+      </div>
+    </main>
+  </body>
+</html>
+
